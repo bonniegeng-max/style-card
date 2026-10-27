@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html data-page-node-id="H4GXs6ExEsPYbC6cKHeXDd" lang="zh-CN">
-<head data-page-node-id="JKPR1KczMMlZpC2vuuv2HA">
-<script data-page-node-id="3HCFjTxEDotBmLZJAcj21v" src="/page/page_comm/inject.js"></script>
-<meta data-page-node-id="oORp3aq8MHJB0KekY7U68k" charset="UTF-8">
-<link data-page-node-id="jXIAQIaE2HhjK6TDTEjbm8" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700;900&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
-<style data-page-node-id="0JFdcGpHo80eFER4L1hH6E" data-pnid-children="WCQfnmZqmjKk5aJq1InZd5">
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700;900&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+<style>
 /* === html-base.css 底座（按本卡覆盖变量） === */
 :root {
     --card-width: 1170px; --card-height: 660px;
@@ -89,39 +88,39 @@ html, body { width:var(--card-width); height:var(--card-height); overflow:hidden
 }
 </style>
 </head>
-<body data-page-node-id="WbPyZ6Dg7wP5wIUZDppJhv">
-<div data-page-node-id="508NX5jla10OU60KnSXDev" class="card">
+<body>
+<div class="card">
 
-  <!--pnid:6ZrMIXPWTyLUuYyjooTaCd--><!-- === 标题 === -->
-  <div data-page-node-id="t74LeDt89zuvrvcZseJiau" class="title"><!--pnid:ijHS0SREbjlL3rvmgcaL7P-->RAG：一次提问的旅程<span data-page-node-id="WHMqCy2q9y5qF54JGupjxA" class="sub"><!--pnid:kONehbjLUrMOlPTlE5EZvu-->检索增强生成 · 把"开卷考试"讲清楚</span></div>
+  <!-- === 标题 === -->
+  <div class="title">RAG：一次提问的旅程<span class="sub">检索增强生成 · 把"开卷考试"讲清楚</span></div>
 
-  <!--pnid:xLswZOthYAXGHR49hsHJDo--><!-- === 节点流程链 === -->
-  <div data-page-node-id="24ncSd3Qd4dQoQHINSJSF0" class="node n1"><span data-page-node-id="UJTPk7EiVWrF4ui6mLe4n2" class="n-name"><!--pnid:zjbrupYc5rfqtRYY7jnT9L-->用户</span><span data-page-node-id="ccoZucaekpUsSImEaNZ2R8" class="n-sub"><!--pnid:f1MctuAP1PWktVgW5rGMHb-->提出问题</span></div>
-  <div data-page-node-id="uaExs815ZB4tLXzc2P5rFN" class="node n2"><span data-page-node-id="47mIvzt40OaasAkvrT3gYE" class="n-name"><!--pnid:QZ5c9LimGuPlw8SpZYEatU-->Embedding</span><span data-page-node-id="IhctIurHcK7IM9XSYQeSng" class="n-sub"><!--pnid:Vq6DnRkhfYltgKOjJCDegn-->问题变向量</span></div>
-  <div data-page-node-id="C0G4IxDjvC1FJELmrSaSpA" class="node n3"><span data-page-node-id="ANFcVWvsHheZ0PFGvii5Xe" class="n-name"><!--pnid:jcIYij0dLKoOECKFS0hAny-->向量检索</span><span data-page-node-id="ntcerNKaZHTqTUl2Rfa9kj" class="n-sub"><!--pnid:ezlPcAgx8OF0VKizWro1Kc-->相似度匹配</span></div>
-  <div data-page-node-id="nd9dPM8Ydvhqris2GD2y6s" class="node n4"><span data-page-node-id="tq3bAprbno317QJfSNCAk1" class="n-name"><!--pnid:VW6HhPlga4S32bJEectlLe-->LLM</span><span data-page-node-id="DFXgrycis1IPBMzZRrbKi6" class="n-sub"><!--pnid:kX5lZBPm4GvL6TUKoKZ05Q-->拼接上下文生成</span></div>
-  <div data-page-node-id="dLfpZGIh8AKvVyWHulLS3n" class="node n5"><span data-page-node-id="af2YhhG5iyQ3VUVTD7LR68" class="n-name"><!--pnid:bkaHsdMsURSvMUuDMCjByL-->回答</span><span data-page-node-id="pzNSECTl5nckVtDlnTTbT5" class="n-sub"><!--pnid:mtHLnUaR2kSvTdSjijzJ2o-->带出处可溯源</span></div>
-  <div data-page-node-id="Zg9QeDMuGoAHWcUw2YGRzh" class="kb"><span data-page-node-id="1inJpHu7fjmN1tNVA3T5a3" class="n-name"><!--pnid:3o5Ah5bw98ACGVXW9AWEq9-->知识库</span><span data-page-node-id="JpyRd1sMnqCZYsqNL1UfoU" class="n-sub"><!--pnid:kCyMohkWGndTuIgcyRzfSh-->你的资料切片</span></div>
+  <!-- === 节点流程链 === -->
+  <div class="node n1"><span class="n-name">用户</span><span class="n-sub">提出问题</span></div>
+  <div class="node n2"><span class="n-name">Embedding</span><span class="n-sub">问题变向量</span></div>
+  <div class="node n3"><span class="n-name">向量检索</span><span class="n-sub">相似度匹配</span></div>
+  <div class="node n4"><span class="n-name">LLM</span><span class="n-sub">拼接上下文生成</span></div>
+  <div class="node n5"><span class="n-name">回答</span><span class="n-sub">带出处可溯源</span></div>
+  <div class="kb"><span class="n-name">知识库</span><span class="n-sub">你的资料切片</span></div>
 
-  <!--pnid:7PGJ7fR8uSnP3LgONpe9Pb--><!-- === 箭头 === -->
-  <div data-page-node-id="Ov2w3SqFAbcxmqttetIETA" class="arrow a1"></div><div data-page-node-id="j28oiEKbCI2XuZFiqWgwrY" class="arrow a2"></div><div data-page-node-id="Xe2fPSf3n0J6F1ena9z8kZ" class="arrow a3"></div><div data-page-node-id="Gdxe3QSHALuzebMgH9Xleg" class="arrow a4"></div>
-  <div data-page-node-id="6mUDCYjHJrbjPi29sin8Y1" class="vline"></div>
+  <!-- === 箭头 === -->
+  <div class="arrow a1"></div><div class="arrow a2"></div><div class="arrow a3"></div><div class="arrow a4"></div>
+  <div class="vline"></div>
 
-  <!--pnid:q4cdDPHKE9mhOjk9dLLvg8--><!-- === 流动的 token === -->
-  <div data-page-node-id="761TuM6OsgQZ4Tiqd8s0NF" class="token"><!--pnid:VLUPUPrNcgYAnadoD7Nzr1-->◆</div>
+  <!-- === 流动的 token === -->
+  <div class="token">◆</div>
 
-  <!--pnid:3DQEEEdMA5IubM3VZRwU5H--><!-- === 底部步骤条 === -->
-  <div data-page-node-id="OgRTjBLqgQe2J0gtf0bM8s" class="stepbar">
-    <div data-page-node-id="Dq4lST9wywBdnarjC9ulCw" class="stepno s1"><!--pnid:gwkU0geRxyKFvjIUDVsNmy-->STEP 1 / 5</div>
-    <div data-page-node-id="nCXTqjzOvVHYKm9WJPmfut" class="stepno s2"><!--pnid:nnkzCz26CEWfpessHI8Dtg-->STEP 2 / 5</div>
-    <div data-page-node-id="Lpa5NOiUYkkLQs37O2BI75" class="stepno s3"><!--pnid:8hwHc3w7vBDgV7jx56fawB-->STEP 3 / 5</div>
-    <div data-page-node-id="mTUwBFq2QcDUEKdRcGJjWR" class="stepno s4"><!--pnid:XXIRCyXHLnOOBKDThdBE5T-->STEP 4 / 5</div>
-    <div data-page-node-id="JveOGBs9YQjYSQmk19f3by" class="stepno s5"><!--pnid:kXCfTSuNUfN2IETvi1KFdd-->STEP 5 / 5</div>
-    <div data-page-node-id="aHqvqnAP6AMS7SIkKpy4oQ" class="cap c1"><!--pnid:mb65ZUQRvMVQITp5jjJHTb-->用户发出问题</div>
-    <div data-page-node-id="zH15BsoqjBl6nhZTKskqoR" class="cap c2"><!--pnid:c1eIAu9kHabh7Qkm3iW6BI-->Embedding 把问题变成向量</div>
-    <div data-page-node-id="2ALxLOsNrjFtzRLsjbbmlT" class="cap c3"><!--pnid:dgLJdAD4ZRAbm1auYbNg5B-->去知识库检索最相关的片段</div>
-    <div data-page-node-id="5goaygfaU7vn4a525gcOZY" class="cap c4"><!--pnid:UK8idTjTxUU2INgY5tldGM-->资料拼进上下文，交给 LLM 生成</div>
-    <div data-page-node-id="RKF7kJdGP8wJk08W8O7Hjt" class="cap c5"><!--pnid:koOsJ3HGN1gv6tPxDuOcBR-->答案带出处，可溯源可验证</div>
+  <!-- === 底部步骤条 === -->
+  <div class="stepbar">
+    <div class="stepno s1">STEP 1 / 5</div>
+    <div class="stepno s2">STEP 2 / 5</div>
+    <div class="stepno s3">STEP 3 / 5</div>
+    <div class="stepno s4">STEP 4 / 5</div>
+    <div class="stepno s5">STEP 5 / 5</div>
+    <div class="cap c1">用户发出问题</div>
+    <div class="cap c2">Embedding 把问题变成向量</div>
+    <div class="cap c3">去知识库检索最相关的片段</div>
+    <div class="cap c4">资料拼进上下文，交给 LLM 生成</div>
+    <div class="cap c5">答案带出处，可溯源可验证</div>
   </div>
 
 </div>

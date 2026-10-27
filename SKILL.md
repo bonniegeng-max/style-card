@@ -1,5 +1,6 @@
 ---
 name: style-card
+version: 0.6.3
 description: 图生风格卡——从参考图反推结构化风格卡并入库，再用风格卡为任意文本生成同风格图片。触发场景：用户给一张图说"总结这个画风/反推prompt/做成风格卡"，或用户给文本要求"用我的风格库/风格卡出图"。Use when the user wants to reverse-engineer an image's visual style into a reusable, slot-based style card, or to generate images from text using the accumulated style card library.
 ---
 
@@ -22,7 +23,8 @@ style-card/
 │   └── html-template.md            # HTML 引擎结构规范（仅 HTML 引擎时读）
 ├── scripts/
 │   └── export-png.sh               # HTML → PNG 截图导出（仅 HTML 引擎时用）
-└── gotchas.md                      # 实战坑清单（生成前必读，发现新坑回写）
+├── gotchas.md                      # 实战坑清单（生成前必读，发现新坑回写）
+└── assets/                         # 各卡的参考原图（卡内引用）
 ```
 
 **铁律**：`library/cards/` 是唯一事实源。INDEX.json 是派生索引，改卡必须同步改索引。
@@ -74,7 +76,7 @@ style-card/
 ## Phase C · 入库
 
 1. 卡片存为 `library/cards/风格卡_{风格名}.md`
-2. 参考原图**不入库**（版权归原作者）：卡内「来源」一行用文字注明出处即可
+2. 参考原图存入 `assets/原图_{风格名}.jpg`，卡内更新引用路径
 3. 更新 `library/INDEX.json`：name / file / vibe / ratio / use_cases / verified
 4. 向用户报一句：库里有几张卡、分别管什么场景
 
@@ -106,3 +108,7 @@ style-card/
 ## 发布
 
 打包即 GitHub repo / ClawHub skill：目录自包含、零依赖（读图 + ImageGen + 文件系统，无需外部 API）。
+
+## 相关 skill / Related skills
+
+- 风格卡反推出的画风，可直接交给 `text-to-comic` 出漫画/绘本：本 skill 解决「画风从哪来」，它解决「画风怎么落到分镜」。
