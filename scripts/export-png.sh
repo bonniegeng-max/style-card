@@ -21,8 +21,7 @@ fi
 
 echo "▶ 画布 ${WIDTH}x${HEIGHT} → $OUTPUT"
 
-# 确保 chromium 就位（首次较慢）
-npx playwright --version >/dev/null 2>&1 || npm i -g playwright >/dev/null 2>&1
+# 确保 chromium 就位（首次较慢，npx 自动下载临时版本，不全局安装）
 npx playwright screenshot \
   --viewport-size="${WIDTH},${HEIGHT}" \
   --wait-for-timeout=3000 \

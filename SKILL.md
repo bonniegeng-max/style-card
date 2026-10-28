@@ -1,6 +1,7 @@
 ---
 name: style-card
-version: 0.6.3
+version: 0.6.4
+allowed-tools: Read, Write, Bash
 description: 图生风格卡——从参考图反推结构化风格卡并入库，再用风格卡为任意文本生成同风格图片。触发场景：用户给一张图说"总结这个画风/反推prompt/做成风格卡"，或用户给文本要求"用我的风格库/风格卡出图"。Use when the user wants to reverse-engineer an image's visual style into a reusable, slot-based style card, or to generate images from text using the accumulated style card library.
 ---
 
@@ -53,6 +54,8 @@ style-card/
 ## Phase A · 反推（图 → 风格卡）
 
 输入：用户提供的参考图（本地路径或剪贴板图）。
+
+> 隐私提示：反推风格卡会把参考图发送给视觉模型分析。若参考图含敏感/私人内容，请先确认可发送，或改用脱敏后的图。
 
 1. 读 `references/reverse-meta-prompt.md`，严格按其结构分析图片
 2. 产出风格卡草稿，必须包含 9 个标准段：
@@ -107,7 +110,7 @@ style-card/
 
 ## 发布
 
-打包即 GitHub repo / ClawHub skill：目录自包含、零依赖（读图 + ImageGen + 文件系统，无需外部 API）。
+打包即 GitHub repo / ClawHub skill：目录自包含；核心流程（读图 + ImageGen + 文件系统）零外部 API。可选依赖：HTML 引擎导出 PNG 用 `scripts/export-png.sh`（需 Node.js + Playwright，首次运行自动下载 Chromium，约 150MB）。
 
 ## 相关 skill / Related skills
 
